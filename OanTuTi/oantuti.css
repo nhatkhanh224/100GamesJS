@@ -1,0 +1,35 @@
+.rock img,
+      .paper img,
+      .scissors img,
+      .scissors-AI img,
+      .rock-AI img,
+      .paper-AI img {
+        cursor: pointer;
+        width: 100%;
+      }
+      @keyframes slideInFromLeft {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+      .hide {
+        display: none;
+      }
+      .show {
+        animation: 0.1s ease-out 0s 1 slideInFromLeft;
+      }
+      h1 {
+        text-align: center;
+        padding: 10px 10px;
+      }
+      .btn {
+        margin-left: 46%;
+        margin-top: 20px;
+      }
+      .red 
+      {
+        color: red;
+      }

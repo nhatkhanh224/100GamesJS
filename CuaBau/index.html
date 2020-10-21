@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/cuabau.css">
+    <style>
+      
+      
+    </style>
+  </head>
+  <body>
+    <audio autoplay>
+      <source src="music/KiepDoDenRemix-DuyManhDJ-2693181.mp3" type="audio/mpeg" />
+    </audio>
+    <div class="container">
+      <h1 id="currentMoney"></h1>
+      <div class="price">
+        <button onclick="getMoney(10000)">10,000 đ</button>
+        <button onclick="getMoney(20000)">20,000 đ</button>
+        <button onclick="getMoney(50000)">50,000 đ</button>
+        <button onclick="getMoney(100000)">100,000 đ</button>
+        <button onclick="getMoney(200000)">200,000 đ</button>
+        <button onclick="getMoney(500000)">500,000 đ</button>
+        <button onclick="getMoney(10000000)">10,000,000 đ</button>
+      </div>
+
+      <div class="result">
+        <div class="row">
+          <div class="col-4">
+            <div class="deer hide">
+              <span id="numberDeer" class="number-deer"></span>
+              <img src="image/deer.PNG" alt="" />
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="holo hide">
+              <span id="numberHoLo" class="number-holo"></span>
+              <img src="image/holo.PNG" alt="" />
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="chicken hide">
+              <span id="numberChicken" class="number-chicken"></span>
+              <img src="image/chicken.PNG" alt="" />
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="fish hide">
+              <span id="numberFish" class="number-fish"></span>
+              <img src="image/fish.PNG" alt="" />
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="crab hide">
+              <span id="numberCrab" class="number-crab"></span>
+              <img src="image/crab.PNG" alt="" />
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="lobster hide">
+              <span id="numberLobster" class="number-lobster"></span>
+              <img src="image/lobster.PNG" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="open-plate">
+        <button class="btn btn-primary" onclick="spin()">Xóc đĩa</button>
+        <button class="btn btn-primary" onclick="continuePlay()">
+          Tiếp tục
+        </button>
+      </div>
+      <div class="bet">
+        <div class="row">
+          <div class="col-4">
+            <div class="deer">
+              <span id="numberLobster" class="number-deer-bet hide"></span>
+              <img src="image/deer.PNG" alt="" onclick="putMoney(deer)" />
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="holo">
+              <span id="numberLobster" class="number-holo-bet hide"></span>
+              <img src="image/holo.PNG" alt="" onclick="putMoney(holo)" />
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="chicken">
+              <span id="numberLobster" class="number-chicken-bet hide"></span>
+              <img src="image/chicken.PNG" alt="" onclick="putMoney(chicken)" />
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="fish">
+              <span id="numberLobster" class="number-fish-bet hide"></span>
+              <img src="image/fish.PNG" alt="" onclick="putMoney(fish)" />
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="crab">
+              <span id="numberLobster" class="number-crab-bet hide"></span>
+              <img src="image/crab.PNG" alt="" onclick="putMoney(crab)" />
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="lobster">
+              <span id="numberLobster" class="number-lobster-bet hide"></span>
+              <img src="image/lobster.PNG" alt="" onclick="putMoney(lobster)" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/cuabau.js"></script>
+  <script>
+   
+  </script>
+</html>

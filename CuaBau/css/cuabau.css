@@ -1,0 +1,82 @@
+.price {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.price button {
+  border-radius: 50%;
+  width: 170px;
+  height: 100px;
+  background-color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.deer img,
+.holo img,
+.chicken img,
+.crab img,
+.fish img,
+.lobster img {
+  width: 100%;
+  cursor: pointer;
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.hide {
+  display: none;
+}
+.show {
+  animation: 1.5s ease-out 0s 1 slideInFromLeft;
+}
+.open-plate {
+  display: flex;
+  justify-content: center;
+}
+.open-plate button {
+  margin: 10px 20px;
+  width: 300px;
+  height: 100px;
+  border-radius: 10px;
+}
+.plate {
+  display: flex;
+  justify-content: center;
+}
+.number-deer,
+.number-holo,
+.number-chicken,
+.number-fish,
+.number-crab,
+.number-lobster,
+.number-deer-bet,
+.number-holo-bet,
+.number-chicken-bet,
+.number-fish-bet,
+.number-crab-bet,
+.number-lobster-bet {
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 50%;
+  font-size: 30px;
+  padding: 1px 16px;
+}
+#currentMoney {
+  text-align: center;
+}
+.price button:hover
+{
+    background-color: rgb(17, 199, 99);
+}
+button:focus
+{
+    outline: none;
+}
+

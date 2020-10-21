@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="oantuti.css" />
+  </head>
+  <body>
+    <audio autoplay>
+      <source src="oantuti.mp3" type="audio/mpeg" />
+    </audio>
+    <div class="container">
+      <h1>GAME OẲN TÙ TÌ</h1>
+      <div class="row">
+        <div class="col-4">
+          <div class="rock">
+            <img
+              src="https://previews.123rf.com/images/artizarus/artizarus1511/artizarus151100005/48281894-scissors-icon-isolated-on-white.jpg"
+              alt=""
+              class="img-rock"
+              onclick="play(0)"
+            />
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="paper">
+            <img
+              src="https://img.icons8.com/ios/452/hand-rock.png"
+              alt=""
+              onclick="play(1)"
+            />
+          </div>
+        </div>
+        <div class="col-4 AI">
+          <div class="scissors">
+            <img
+              src="https://thumbs.dreamstime.com/b/hand-symbol-7966856.jpg"
+              alt=""
+              onclick="play(2)"
+            />
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="scissors-AI hide">
+            <img
+              src="https://previews.123rf.com/images/artizarus/artizarus1511/artizarus151100005/48281894-scissors-icon-isolated-on-white.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="paper-AI hide">
+            <img
+              src="https://thumbs.dreamstime.com/b/hand-symbol-7966856.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="rock-AI hide">
+            <img src="https://img.icons8.com/ios/452/hand-rock.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-info" type="submit" onclick="continuePlay()">
+        CONTINUE
+      </button>
+    </div>
+  </body>
+  <script src="oantuti.js"></script>
+</html>
